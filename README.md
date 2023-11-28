@@ -28,9 +28,11 @@ We also share the covariance matrices for each sample, saved as
 The covariances matrices were produced with the Jackknife covariance estimation method, with $n=150$ Jackknife patches, and $p=15$ datapoints.
 If you wishes to match our use of the inverse covariances you should employ the Hartlap correction
 ([Hartlap et al. 2007](https://ui.adsabs.harvard.edu/abs/2007A&A...464..399H)) to produce and unbiased estimate of the inverse covariance matrix.  
-For our jackknife estimated covariance $C_*$:
-$$C^{-1} = \frac{n-p-2}{n-1}C^{-1}_*$$
+For our jackknife estimated covariance, $`C_*`$:  
 
+```math
+C^{-1} = \frac{n-p-2}{n-1}C^{-1}_*
+```
 
 ## Distributions
 We also provide our log stellar mass, $\log_{10}({M_*/M_\odot})$, and redshift, $z$, distributions as  
